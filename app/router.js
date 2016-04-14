@@ -11,5 +11,6 @@ export default class AppRouter extends Router {
     this.get(`/`, `version`);
 
     this.get(`/branches`, `branch-data`);
+    this.get(`/branches/:id`, `branch-find`);
   }
 }
