@@ -18,5 +18,6 @@ export default class AppRouter extends Router {
     // Register routes for sales resource
     this.get(`/sales`, `sales-data`);
     this.get(`/sales/:id`, `sale-find`);
+    this.post(`/sales`, `sale-create`);
   }
 }
