@@ -10,8 +10,12 @@ export default class AppRouter extends Router {
   registerRoutes() {
     this.get(`/`, `version`);
 
+    // Register routes for branch resources
     this.get(`/branches`, `branch-data`);
     this.get(`/branches/:id`, `branch-find`);
     this.post(`/branches`, `branch-create`);
+
+    // Register routes for sales resource
+    this.get(`/sales`, `sales-data`);
   }
 }

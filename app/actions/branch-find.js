@@ -14,6 +14,6 @@ export default class BranchData extends Action {
     const Branch = ds.model(`branch`);
 
     // Return the branch WHERE the `id` column is the same as `id`
-    return Branch.where({id: id}).fetch();
+    return Branch.where({id: id}).fetch({withRelated: `sales`});
   }
 }

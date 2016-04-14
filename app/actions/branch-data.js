@@ -11,6 +11,6 @@ export default class BranchData extends Action {
     const Branch = ds.model(`branch`);
 
     // Return the results of looking up all branches
-    return Branch.fetchAll();
+    return Branch.fetchAll({withRelated: `sales`});
   }
 }
