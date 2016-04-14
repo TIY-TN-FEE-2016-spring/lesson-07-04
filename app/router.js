@@ -9,5 +9,7 @@ export default class AppRouter extends Router {
    */
   registerRoutes() {
     this.get(`/`, `version`);
+
+    this.get(`/branches`, `branch-data`);
   }
 }
